@@ -6,7 +6,7 @@
     },
 
     "globals": {
-
+        "require": true
     },
 
     "rules": {
