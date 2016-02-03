@@ -11,7 +11,7 @@ var app = express();
 // Configure server
 app.set('port', (process.env.PORT || 5000));
 app.set('appRoot', path.normalize(__dirname + '/../client'));
-app.use(express.static(path.join(app.get('appRoot'), 'public')));
+app.use(express.static(path.join(app.get('appRoot'), 'dist')));
 
 // Set up routes
 require('./routes')(app);
