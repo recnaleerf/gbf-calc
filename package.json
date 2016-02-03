@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "GBF Damage Calculator",
   "main": "server/app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/southrop/gbf-calc.git"
@@ -15,8 +12,17 @@
   "bugs": {
     "url": "https://github.com/southrop/gbf-calc/issues"
   },
-  "homepage": "https://github.com/southrop/gbf-calc#readme",
+  "homepage": "http://gbf.heroku-app.com",
+  "scripts": {
+    "clean": "bin/clean.sh",
+    "build": "npm run clean && bin/build.sh",
+    "prestart": "npm run build",
+    "start": "node server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
+    "angular": "^1.4.9",
+    "bootstrap": "^3.3.6",
     "express": "^4.13.4"
   },
   "devDependencies": {
@@ -24,6 +30,7 @@
     "clean-css": "^3.4.9",
     "node-sass": "^3.4.2",
     "nodemon": "^1.8.1",
-    "uglify-js": "^2.6.1"
+    "uglify-js": "^2.6.1",
+    "watchify": "^3.7.0"
   }
 }

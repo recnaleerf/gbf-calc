@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = function (app) {
-    
     // Reserved for API routes e.g.
     // app.use('/api/things', require('./api/thing'));
 
@@ -15,4 +14,4 @@ module.exports = function (app) {
     app.get('/*', function (req, res) {
         res.sendFile(app.get('appRoot') + '/index.html');
     });
-}
+};
