@@ -14,8 +14,8 @@
   },
   "homepage": "http://gbf.heroku-app.com",
   "scripts": {
-    "clean": "bin/clean.sh",
-    "build": "npm run clean && bin/build.sh",
+    "clean": "sh bin/clean.sh",
+    "build": "npm run clean && sh bin/build.sh",
     "postinstall": "npm run build",
     "start": "node server/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
