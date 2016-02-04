@@ -1,6 +1,6 @@
-# GBF Damage Calculator
+# GBF Attack Calculator
 
-A work-in-progress experimental damage calculator for [Granblue Fantasy](http://granbluefantasy.jp).
+A work-in-progress experimental attack calculator for [Granblue Fantasy](http://granbluefantasy.jp).
 
 ## Dependencies
 
